@@ -1,0 +1,41 @@
+1.0 今日内容：继续完成品优购项目
+2.0 项目
+    项目结构的搭建
+    tabBar 的配置
+    首页
+        结构样式
+        轮播图的数据动态获取
+        动态获取分类选项数据
+            API: https://itjustfun.cn/api/public/v1/home/catitems
+        动态获取楼层数据
+            API：https://itjustfun.cn/api/public/v1/home/floordata
+    分类：
+        结构样式
+            将头部封装为了组件
+            完成了内容区域的结构样式
+            完成滚动效果：
+                1）设置外层容器的高度为整个页面的高度
+                2）设置内容的高度超过外层的容器
+                3）超出的部分使用： overflow: auto
+                注意点：
+                    如果要给一个元素设置高度，可以做以下操作：
+                        a）给元素设置一个定位：position: absolute
+                        b）给元素设置同方位上的两个属性： top: 100rpx; bottm: 0rpx;
+                        c）最后这个容器的高度会是这两个值之间的距离
+                    以上方法同样适用于宽度：
+                        a）position: absolute
+                        b）right:0rpx; left: 0rpx;
+            完成左侧菜单的高亮选中
+        动态数据
+            获取数据的API:
+                https://itjustfun.cn/api/public/v1/categories
+            动态渲染左侧的菜单栏
+            动态渲染右侧的内容：
+                内容其实就是在左侧菜单对应数据的 children 属性中
+    搜索列表：
+        创建一个搜索列表页面
+        结构样式
+        动态渲染数据
+            API:https://itjustfun.cn/api/public/v1/goods/search
+        下载加载更多：
+            
